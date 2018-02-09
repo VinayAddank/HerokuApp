@@ -1,60 +1,82 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
 
-<body>
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<link rel="dns-prefetch" href="//s3.envato.com" />
 
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with Java on Heroku</h1>
-    <p>This is a sample Java application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-java"><span class="glyphicon glyphicon-flash"></span> Getting Started with Java</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/java-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-java" class="alert-link">Getting Started with Java on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/java-getting-started">Heroku Button</a> on the repository.</li>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/java-getting-started/blob/master/pom.xml">pom.xml</a>, creating a slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/java-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd java-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-java#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-java">Deploying Java Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
-</div>
+<title>Vinay Addanki - Blog</title>
+<meta name="description"
+	content="&amp;lt;a href=&amp;quot;http://themeforest.net/user/ThemeNectar/follow&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http:/...">
+<meta name="robots" content="noindex, follow" />
+<meta name="viewport"
+	content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+<link rel="stylesheet" media="all"
+	href="https://public-assets.envato-static.com/assets/market/core/index-a23f7f2dd592d3928d0c7365f8386c4310a63d0ffe2e72a92ec9a83aaadeb17c.css" />
+<link rel="stylesheet" media="all"
+	href="https://public-assets.envato-static.com/assets/market/pages/preview/index-6da503d08aa5f43ac39ce104f6cabc796ea21e19547d1d8b441cb073c2e88d01.css" />
+
+<link rel="apple-touch-icon-precomposed" type="image/x-icon"
+	href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-72x72-precomposed.png"
+	sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon"
+	href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-114x114-precomposed.png"
+	sizes="114x114" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon"
+	href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-144x144-precomposed.png"
+	sizes="144x144" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon"
+	href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-precomposed.png" />
+
+<script
+	src="https://public-assets.envato-static.com/assets/market/pages/full_screen_preview/index-76d193bf2a53e03957b9f7dbe7565c4d566127f71163fb2302def8ab3375d86d.js"></script>
+
+<script>
+      //function to fix height of iframe!
+      var calcHeight = function() {
+        var headerDimensions = $('.preview__header').height();
+        $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
+      }
+
+      $(document).ready(function() {
+        calcHeight();
+      });
+
+      $(window).resize(function() {
+        calcHeight();
+      }).load(function() {
+        calcHeight();
+      });
+    </script>
+
+
+</head>
+<body class="full-screen-preview">
+
+	<div class="preview__header" data-view="ctaHeader">
+
+		<div class="preview__envato-logo"></div>
+
+		<div class="preview__actions">
+			<div class="preview__action--buy">
+				<a class="e-btn--3d -color-primary"
+					href="https://www.facebook.com/vinay.addanki.1">Join with Me </a>
+			</div>
+
+		</div>
+	</div>
+
+	<iframe class="full-screen-preview__frame"
+		src="http://themenectar.com/demo/salient-promo" name="preview-frame"
+		frameborder="0" noresize="noresize" data-view="fullScreenPreview">
+	</iframe>
+
+
+	<script>$(function(){viewloader.execute(Views);});</script>
+
 
 </body>
 </html>
